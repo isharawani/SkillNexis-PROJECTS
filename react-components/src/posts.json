@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React",
+    "content": "React helps developers build interactive user interfaces using reusable components.",
+    "category": "React"
+  },
+  {
+    "id": 2,
+    "title": "Understanding Props",
+    "content": "Props allow us to pass data from a parent component to a child component.",
+    "category": "React"
+  },
+  {
+    "id": 3,
+    "title": "Why useState is Important",
+    "content": "useState helps React applications manage and update dynamic data.",
+    "category": "React"
+  },
+  {
+    "id": 4,
+    "title": "Introduction to JavaScript",
+    "content": "JavaScript adds interactivity and dynamic behavior to modern websites.",
+    "category": "JavaScript"
+  },
+  {
+    "id": 5,
+    "title": "Learning HTML and CSS",
+    "content": "HTML provides structure while CSS helps create attractive and responsive web designs.",
+    "category": "Web Development"
+  }
+]

@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+dist/
+build/
+
+*.log
+
+.vscode/
+.idea/
+.DS_Store
+Week-2/backend/uploads/

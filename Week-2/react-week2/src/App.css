@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+main > h1 {
+  color: #2563eb;
+}
+
+.product-card {
+  background: white;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+  color: #2563eb;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.in-stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.product-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #1d4ed8;
+}
+.todo-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-section h2 {
+  color: #2563eb;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.todo-input button,
+.todo-list button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f7fb;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+}
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
