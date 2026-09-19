@@ -1,0 +1,349 @@
+.admin-products-page {
+    min-height: 100vh;
+    padding: 40px 50px 70px;
+    background:
+        radial-gradient(circle at top left, #e8f3d8 0%, transparent 35%),
+        linear-gradient(135deg, #fff1f4 0%, #fffaf0 100%);
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.admin-products-page h1 {
+    text-align: center;
+    margin: 0 0 35px;
+    color: #365314;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* =========================
+   ADD PRODUCT FORM
+========================= */
+
+.admin-form {
+    max-width: 1050px;
+    margin: 0 auto 45px;
+    padding: 30px;
+
+    background: #fffaf0;
+
+    border: 2px solid #dcecc5;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(54, 83, 20, 0.12);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative top line */
+
+.admin-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        #6b8e23,
+        #c6284f,
+        #6b8e23
+    );
+}
+
+.admin-form h2 {
+    margin: 0 0 25px;
+
+    color: #365314;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* =========================
+   FORM INPUTS
+========================= */
+
+.admin-form input,
+.admin-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 16px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #dcecc5;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #263218;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+.admin-form input::placeholder,
+.admin-form textarea::placeholder {
+    color: #8a8f80;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+    border-color: #6b8e23;
+
+    box-shadow:
+        0 0 0 4px rgba(107, 142, 35, 0.12);
+
+    background: #fffef9;
+}
+
+.admin-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* =========================
+   ADD PRODUCT BUTTON
+========================= */
+
+.admin-form button {
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #c6284f,
+        #9f1239
+    );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 12px rgba(198, 40, 79, 0.25);
+
+    transition: all 0.25s ease;
+}
+
+.admin-form button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(198, 40, 79, 0.35);
+}
+
+/* =========================
+   ALL PRODUCTS TITLE
+========================= */
+
+.admin-products-page > h2 {
+    max-width: 1300px;
+    margin: 0 auto 20px;
+
+    color: #365314;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.admin-product-grid {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.admin-product-card {
+    overflow: hidden;
+
+    background: #fffaf0;
+
+    border: 2px solid #dcecc5;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 22px rgba(54, 83, 20, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.admin-product-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b8cf91;
+
+    box-shadow:
+        0 15px 32px rgba(54, 83, 20, 0.18);
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.admin-product-card img {
+    display: block;
+
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+}
+
+/* =========================
+   PRODUCT CONTENT
+========================= */
+
+.admin-product-content {
+    padding: 20px;
+}
+
+.admin-product-content h3 {
+    margin: 0 0 10px;
+
+    color: #365314;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.admin-product-content p {
+    margin: 7px 0;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Price */
+
+.admin-product-content p strong {
+    color: #c6284f;
+    font-size: 18px;
+}
+
+/* Stock */
+
+.admin-product-content p:last-of-type {
+    color: #6b8e23;
+    font-weight: 600;
+}
+
+/* =========================
+   ADMIN ACTION BUTTONS
+========================= */
+
+.admin-actions {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.admin-actions button {
+    flex: 1;
+
+    padding: 11px 10px;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+/* Edit */
+
+.edit-btn {
+    background: #dcecc5;
+    color: #365314;
+}
+
+.edit-btn:hover {
+    background: #c5dda5;
+    transform: translateY(-2px);
+}
+
+/* Delete */
+
+.delete-btn {
+    background: #c6284f;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #9f1239;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+    .admin-product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .admin-products-page {
+        padding: 30px 20px 50px;
+    }
+
+    .admin-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-products-page {
+        padding: 25px 15px 40px;
+    }
+
+    .admin-products-page h1 {
+        font-size: 30px;
+    }
+
+    .admin-form {
+        padding: 22px;
+    }
+
+    .admin-product-grid {
+        grid-template-columns: 1fr;
+    }
+}

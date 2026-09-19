@@ -1,0 +1,138 @@
+.admin-dashboard-page {
+    min-height: 100vh;
+    padding: 40px 60px;
+    background: #f5f7fb;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.dashboard-header p {
+    color: #666;
+}
+
+.dashboard-stats {
+    max-width: 1300px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 15px;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+}
+
+.recent-orders-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.recent-orders-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.dashboard-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-order-card h3 {
+    margin: 0 0 8px;
+}
+
+.dashboard-order-card p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.dashboard-order-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.dashboard-order-right strong {
+    font-size: 20px;
+}
+
+.dashboard-order-right span {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #eee;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dashboard-error {
+    text-align: center;
+    color: #d32f2f;
+}
+
+@media (max-width: 900px) {
+    .admin-dashboard-page {
+        padding: 30px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-dashboard-page {
+        padding: 25px 15px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-order-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-order-right {
+        align-items: flex-start;
+    }
+}

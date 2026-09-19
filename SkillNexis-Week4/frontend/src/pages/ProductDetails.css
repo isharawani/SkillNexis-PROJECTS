@@ -1,0 +1,127 @@
+.product-details-page {
+    min-height: 100vh;
+    padding: 40px 60px;
+    background: #f5f7fb;
+}
+
+.back-btn {
+    padding: 10px 18px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+.product-details-card {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-details-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-details-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-category {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-details-content h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+    color: #222;
+}
+
+.product-description {
+    color: #666;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-details-content h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.product-stock {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.add-details-cart-btn {
+    width: fit-content;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.add-details-cart-btn:hover {
+    background: #444;
+}
+
+.add-details-cart-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.product-error {
+    color: #d32f2f;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    .product-details-page {
+        padding: 30px 20px;
+    }
+
+    .product-details-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .product-details-image img {
+        height: 350px;
+    }
+
+    .product-details-content h1 {
+        font-size: 28px;
+    }
+}
