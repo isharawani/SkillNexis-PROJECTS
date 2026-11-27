@@ -24,37 +24,35 @@ function App() {
                 <Navbar />
 
                 <Routes>
+                    {/* Public Routes */}
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
+                    <Route path="/products/:id" element={<ProductDetails />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/cart" element={<Cart />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/cart" element={<Cart />} />
+
+                    {/* Customer Routes */}
+                    <Route path="/checkout" element={<Checkout />} />
                     <Route path="/orders" element={<Orders />} />
-                    <Route
-    path="/products/:id"
-    element={<ProductDetails />}
-/>
-          <Route element={<AdminRoute />}>
-    <Route
-        path="/admin/dashboard"
-        element={<AdminDashboard />}
-    />
 
-    <Route
-        path="/admin/products"
-        element={<AdminProducts />}
-    />
+                    {/* Admin Protected Routes */}
+                    <Route element={<AdminRoute />}>
+                        <Route
+                            path="/admin/dashboard"
+                            element={<AdminDashboard />}
+                        />
 
-    <Route
-        path="/admin/orders"
-        element={<AdminOrders />}
-    />
-    <Route
-    path="/checkout"
-    element={<Checkout />}
-/>
-</Route>          
+                        <Route
+                            path="/admin/products"
+                            element={<AdminProducts />}
+                        />
 
+                        <Route
+                            path="/admin/orders"
+                            element={<AdminOrders />}
+                        />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </CartProvider>
